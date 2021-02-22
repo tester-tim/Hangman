@@ -1,0 +1,276 @@
+import random
+
+# Variables
+words = ['abasement', 'abbey', 'albatross', 'aardvark', 'abbacus', 'baleful', 'bazooka', 'barnacle', 'breeding', 'begging', 'cramp', 'clapping', 'credentials', 'computer', 'crimea', 'defense', 'dugout', 'decrypt', 'delegate', 'dire', 'echo', 'extreme', 'earnings', 'elevate', 'easement', 'forgery', 'flatter', 'files', 'freakish', 'fleet', 'grabbing', 'glamour', 'groping', 'gorgeous', 'goofy', 'hacking', 'horrible', 'horrendous', 'hangman', 'helpful', 'idea', 'imagaine', 'imagination', 'iterate', 'iteration', 'joyful', 'jayride', 'jamming', 'jokester', 'jackal', 'kayak', 'klutz', 'keeping', 'keep', 'knowledge', 'leaping', 'lords', 'landing', 'ledger', 'ladder', 'meany', 'massacre', 'mobile', 'manatee', 'monster', 'noodle', 'operation', 'plausible', 'question', 'radioactive', 'stenographer', 'typewriter', 'uninformed', 'voyeurism', 'willful', 'xray', 'youth', 'zoology' ]  
+answer = random.choice(words).lower()
+good_letters = ['']
+bad_letters = ['']
+chances = 10
+
+
+
+print('Welcome to Hangman!!!')
+print('You have 10 guesses to figure out the secret word!')
+
+
+while True:
+    if chances == 9:
+        print('-----------------')
+        
+    if chances == 8:
+        print('| ')       
+        print('| ')
+        print('| ') 
+        print('| ')
+        print('| ')
+        print('| ')
+        print('| ')
+        print('| ')
+        print('| ') 
+        print('| ')
+        print('| ')
+        print('| ') 
+        print('| ')  
+        print('| ') 
+        print('| ')   
+        print('| ')  
+        print('| ')  
+        print('| ')  
+        print('| ') 
+        print('| ') 
+        print('| ') 
+        print('-----------------')
+
+    if chances == 7:
+        print(' ------          ')
+        print('|              ')      
+        print('|             ')
+        print('|          ')
+        print('|        ')
+        print('|     ')
+        print('|    ')
+        print('|       ')
+        print('|          ')
+        print('|             ')
+        print('|             ')
+        print('|               ')
+        print('|         ')
+        print('|          ')
+        print('|         ')
+        print('|            ')
+        print('|             ')
+        print('|             ')
+        print('|              ') 
+        print('|             ')
+        print('|           ')
+        print('|         ')
+        print('-----------------')
+
+    if chances == 6:
+        print(' ------          ')
+        print('|     |          ')      
+        print('|            ')
+        print('|           ')
+        print('|         ')
+        print('|       ')
+        print('|       ')
+        print('|        ')
+        print('|         ')
+        print('|           ')
+        print('|          ')
+        print('|          ')
+        print('|         ')
+        print('|        ')
+        print('|       ')
+        print('|          ')
+        print('|          ')
+        print('|          ')
+        print('|          ') 
+        print('|         ')
+        print('|        ')
+        print('|       ')
+        print('-----------------')
+        
+    if chances == 5:
+        print(' ------          ')
+        print('|     |          ')      
+        print('|    ---         ')
+        print('|   /   \        ')
+        print('|  / x x \       ')
+        print('| |  /_   |      ')
+        print('| |       |      ')
+        print('|  \ ...  /      ')
+        print('|   \    /       ')
+        print('|    ---         ')
+        print('|               ')
+        print('|               ')
+        print('|             ')
+        print('|           ')
+        print('|         ')
+        print('|            ')
+        print('|            ')
+        print('|            ')
+        print('|            ') 
+        print('|           ')
+        print('|          ')
+        print('|         ')
+        print('-----------------')
+        
+    if chances == 4:
+        print(' ------          ')
+        print('|     |          ')      
+        print('|    ---         ')
+        print('|   /   \        ')
+        print('|  / x x \       ')
+        print('| |  /_   |      ')
+        print('| |       |      ')
+        print('|  \ ...  /      ')
+        print('|   \    /       ')
+        print('|    ---         ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |         ')
+        print('|     |        ')
+        print('|     |       ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |          ') 
+        print('|           ')
+        print('|          ')
+        print('|         ')
+        print('-----------------')
+       
+    if chances == 3:
+        print(' ------          ')
+        print('|     |          ')      
+        print('|    ---         ')
+        print('|   /   \        ')
+        print('|  / x x \       ')
+        print('| |  /_   |      ')
+        print('| |       |      ')
+        print('|  \ ...  /      ')
+        print('|   \    /       ')
+        print('|    ---         ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|    /|        ')
+        print('|   / |        ')
+        print('|  /  |         ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |          ') 
+        print('|            ')
+        print('|           ')
+        print('|         ')
+        print('-----------------')
+        
+    if chances == 2:
+        print(' ------          ')
+        print('|     |          ')      
+        print('|    ---         ')
+        print('|   /   \        ')
+        print('|  / x x \       ')
+        print('| |  /_   |      ')
+        print('| |       |      ')
+        print('|  \ ...  /      ')
+        print('|   \    /       ')
+        print('|    ---         ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|    /|\         ')
+        print('|   / | \        ')
+        print('|  /  |  \       ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |          ') 
+        print('|          ')
+        print('|           ')
+        print('|         ')
+        print('-----------------')
+       
+    if chances == 1:
+        print(' ------          ')
+        print('|     |          ')      
+        print('|    ---         ')
+        print('|   /   \        ')
+        print('|  / x x \       ')
+        print('| |  /_   |      ')
+        print('| |       |      ')
+        print('|  \ ...  /      ')
+        print('|   \    /       ')
+        print('|    ---         ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|    /|\         ')
+        print('|   / | \        ')
+        print('|  /  |  \       ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |          ')
+        print('|     |          ') 
+        print('|    /          ')
+        print('|   /           ')
+        print('|  /            ')
+        print('-----------------')
+        
+    
+        
+   
+
+    print('Here is your word to guess: ')
+
+    hint = [letter if letter in good_letters else '-' for letter in answer]
+    
+    if '-' not in hint:
+        print('CONGRATS!!! YOU WIN!!!')
+        print('You guessed the answer, ' + answer)
+        break
+    
+    print(''.join(hint))
+    guess = input('Guess a letter: ').lower()
+    
+    if guess in good_letters or guess in bad_letters:
+        print('You already guessed that letter! Try again!')
+    elif guess in answer:
+        good_letters.append(guess)
+        print('You guess a correct letter!')
+    else:
+        chances -= 1
+        if chances == 0:
+            print(' ------          ')
+            print('|     |          ')      
+            print('|    ---         ')
+            print('|   /   \        ')
+            print('|  / x x \       ')
+            print('| |  /_   |      ')
+            print('| |       |      ')
+            print('|  \ ...  /      ')
+            print('|   \    /       ')
+            print('|    ---         ')
+            print('|     |          ')
+            print('|     |          ')
+            print('|    /|\         ')
+            print('|   / | \        ')
+            print('|  /  |  \       ')
+            print('|     |          ')
+            print('|     |          ')
+            print('|     |          ')
+            print('|     |          ') 
+            print('|    / \         ')
+            print('|   /   \        ')
+            print('|  /     \       ')
+            print('-----------------')
+            print('YOU LOSE!!!')
+            print('The answer was ' + answer)
+            break
+        bad_letters.append(guess)
+        print('UH-OH! That letter isnt in the word! You have ' + str(chances) + ' guesses left!')
+    
+
+    
+
+
+
